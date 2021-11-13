@@ -1,0 +1,49 @@
+name: dartweek4_app
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^3.1.1
+  firebase_core: ^1.6.0
+  firebase_remote_config: ^0.11.0
+  flutter:
+    sdk: flutter
+  flutter_signin_button: ^2.0.0
+  get:
+    git: https://github.com/jonataslaw/getx.git
+  google_sign_in: ^5.1.1
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+  # example:
+  fonts:
+    - family: FilmesAppIcons
+      fonts:
+        - asset: assets/fonts/FilmesAppIcons.ttf
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
+    - family: Metropolis
+      fonts:
+        - asset: assets/fonts/metropolis/Metropolis-Regular.otf
+        - asset: assets/fonts/metropolis/Metropolis-Bold.otf
+        - asset: assets/fonts/metropolis/Metropolis-SemiBold.otf
+          weight: 600
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #
