@@ -50,7 +50,7 @@ class MovieDetailModel {
       urlImages: urlImages, //List<String>.from(map['urlImages'] ?? const []),
       releaseDate: DateTime.parse(map['release_date']),
       overview: map['overview'] ?? '',
-      productionCompanies: List<dynamic>.from(map['productionCompanies'] ?? const []).map<String>((p) => p['name']).toList(),
+      productionCompanies: List<dynamic>.from(map['production_companies'] ?? const []).map<String>((p) => p['name']).toList(),
       originalLanguage: map['original_language'] ?? '',
       cast: List<CastModel>.from(map['credits']['cast']?.map((x) => CastModel.fromMap(x)) ?? const []),
     );
