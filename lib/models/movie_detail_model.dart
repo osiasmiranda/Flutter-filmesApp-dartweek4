@@ -41,7 +41,7 @@ class MovieDetailModel {
 
   factory MovieDetailModel.fromMap(Map<String, dynamic> map) {
     var urlImagesPosters = map['images']['posters'];
-    var urlImages = urlImagesPosters?.map<String>((i) => 'https://image.tmdb.org/t/p/w200${i['file_path']}').toList() ?? const [];
+    var urlImages = urlImagesPosters?.map<String>((i) => 'https://image.tmdb.org/t/p/w185${i['file_path']}').toList() ?? const [];
 
     return MovieDetailModel(
       title: map['title'] ?? '',

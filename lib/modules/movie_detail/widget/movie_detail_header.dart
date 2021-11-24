@@ -1,4 +1,5 @@
 import 'package:dartweek4_app/models/movie_detail_model.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailHeader extends StatelessWidget {
@@ -8,6 +9,7 @@ class MovieDetailHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var movieData = movie;
+
     if (movieData != null) {
       return SizedBox(
           height: 278,
@@ -18,8 +20,9 @@ class MovieDetailHeader extends StatelessWidget {
               final image = movieData.urlImages[index];
               return Padding(
                 padding: EdgeInsets.all(2),
-                child: Image.network(
-                  image,
+                child: FadeInImage.memoryNetwork(
+                  placeholder: kTransparentImage,
+                  image: image,
                 ),
               );
             },
