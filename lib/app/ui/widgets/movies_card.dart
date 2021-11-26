@@ -1,4 +1,5 @@
 import 'package:dartweek4_app/app/ui/filmes_app_icons_icons.dart';
+import 'package:dartweek4_app/app/ui/theme_extensions.dart';
 import 'package:dartweek4_app/models/movie_model.dart';
 import 'package:dartweek4_app/modules/movies/movies_controller.dart';
 import 'package:flutter/material.dart';
@@ -84,8 +85,8 @@ class MoviesCard extends GetView<MoviesController> {
                       onPressed: favoriteCallback,
                       iconSize: 15,
                       icon: Icon(
-                        FilmesAppIcons.heart_empty,
-                        color: Colors.grey,
+                        movie.favorite ? FilmesAppIcons.heart : FilmesAppIcons.heart_empty,
+                        color: movie.favorite ? context.themeRed : context.themeGrey,
                       ),
                     ),
                   ),

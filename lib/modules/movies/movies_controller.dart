@@ -55,10 +55,29 @@ class MoviesController extends GetxController with MessagesMixin {
 
   Future<void> getMovies() async {
     try {
-      final popularMoviesData = await _moviesService.getPopularMovies();
+      var popularMoviesData = await _moviesService.getPopularMovies();
+      var topRatedMoviesData = await _moviesService.getTopRated();
+      final favorites = await getFavorites();
+
+      popularMoviesData = popularMoviesData.map((m) {
+        if (favorites.containsKey(m.id)) {
+          return m.copyWith(favorite: true);
+        } else {
+          return m.copyWith(favorite: false);
+        }
+      }).toList();
+
+      topRatedMoviesData = topRatedMoviesData.map((m) {
+        if (favorites.containsKey(m.id)) {
+          return m.copyWith(favorite: true);
+        } else {
+          return m.copyWith(favorite: false);
+        }
+      }).toList();
+
       popularMovies.assignAll(popularMoviesData);
       _popularMoviesOriginal = popularMoviesData;
-      final topRatedMoviesData = await _moviesService.getTopRated();
+
       topRatedMovies.assignAll(topRatedMoviesData);
       _topRatedMoviesOriginal = topRatedMoviesData;
     } catch (e, s) {
@@ -118,5 +137,24 @@ class MoviesController extends GetxController with MessagesMixin {
       await _moviesService.addOrRemoveFavorite(user.uid, newMovie);
       await getMovies();
     }
+  }
+
+  Future<Map<int, MovieModel>> getFavorites() async {
+    final user = _authService.user;
+
+    if (user != null) {
+      final favorities = await _moviesService.getFavoritiesMovies(user.uid);
+      //varre e transformar em mapa.
+
+      return <int, MovieModel>{
+        for (var fav in favorities) fav.id: fav,
+        //retornando
+        // {1: MovieModel(),
+        //  2: MovieModel(),
+        //  3: MovieModel(),
+        //  }
+      };
+    }
+    return {};
   }
 }
