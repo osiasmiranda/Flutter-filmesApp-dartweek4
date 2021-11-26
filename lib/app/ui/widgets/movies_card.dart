@@ -1,13 +1,17 @@
 import 'package:dartweek4_app/app/ui/filmes_app_icons_icons.dart';
 import 'package:dartweek4_app/models/movie_model.dart';
+import 'package:dartweek4_app/modules/movies/movies_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/route_manager.dart';
 import 'package:intl/intl.dart';
 
-class MoviesCard extends StatelessWidget {
+class MoviesCard extends GetView<MoviesController> {
   final dateFormat = DateFormat('dd/MM/y');
   final MovieModel movie;
-  MoviesCard({Key? key, required this.movie}) : super(key: key);
+  final VoidCallback favoriteCallback;
+
+  MoviesCard({Key? key, required this.movie, required this.favoriteCallback}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +37,7 @@ class MoviesCard extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       clipBehavior: Clip.antiAlias,
                       child: Image.network(
-                        movie.posterPath,
+                        'https://image.tmdb.org/t/p/w200${movie.posterPath}',
                         width: 148,
                         height: 184,
                         fit: BoxFit.cover,
@@ -77,9 +81,7 @@ class MoviesCard extends StatelessWidget {
                   child: SizedBox(
                     height: 30,
                     child: IconButton(
-                      onPressed: () {
-                        print('Clicou Favorites');
-                      },
+                      onPressed: favoriteCallback,
                       iconSize: 15,
                       icon: Icon(
                         FilmesAppIcons.heart_empty,

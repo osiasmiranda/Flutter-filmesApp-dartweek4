@@ -1,3 +1,4 @@
+import 'package:dartweek4_app/app/auth/auth_service.dart';
 import 'package:dartweek4_app/app/ui/messeges/messages_mixin.dart';
 import 'package:dartweek4_app/models/genre_model.dart';
 import 'package:dartweek4_app/models/movie_model.dart';
@@ -8,6 +9,7 @@ import 'package:get/get.dart';
 class MoviesController extends GetxController with MessagesMixin {
   final GenresService _genresService;
   final MoviesService _moviesService;
+  final AuthService _authService;
 
   final _message = Rxn<MessagesModel>();
   final genres = <GenreModel>[].obs;
@@ -23,8 +25,10 @@ class MoviesController extends GetxController with MessagesMixin {
   MoviesController({
     required GenresService genresService,
     required MoviesService moviesService,
+    required AuthService authService,
   })  : _genresService = genresService,
-        _moviesService = moviesService;
+        _moviesService = moviesService,
+        _authService = authService;
 
   @override
   void onInit() {
@@ -41,6 +45,16 @@ class MoviesController extends GetxController with MessagesMixin {
       final genresData = await _genresService.getGenres();
       genres.assignAll(genresData);
 
+      await getMovies();
+    } catch (e, s) {
+      print(e);
+      print(s);
+      _message(MessagesModel.error(title: 'Erro', message: ':( erro ao carregar dados...'));
+    }
+  }
+
+  Future<void> getMovies() async {
+    try {
       final popularMoviesData = await _moviesService.getPopularMovies();
       popularMovies.assignAll(popularMoviesData);
       _popularMoviesOriginal = popularMoviesData;
@@ -92,6 +106,17 @@ class MoviesController extends GetxController with MessagesMixin {
     } else {
       popularMovies.assignAll(_popularMoviesOriginal);
       topRatedMovies.assignAll(_topRatedMoviesOriginal);
+    }
+  }
+
+  Future<void> favoriteMovie(MovieModel movie) async {
+    final user = _authService.user;
+
+    if (user != null) {
+      var newMovie = movie.copyWith(favorite: !movie.favorite);
+
+      await _moviesService.addOrRemoveFavorite(user.uid, newMovie);
+      await getMovies();
     }
   }
 }
