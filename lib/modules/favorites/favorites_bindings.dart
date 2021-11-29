@@ -1,6 +1,16 @@
 import 'package:get/get.dart';
 
+import 'favorites_controller.dart';
+
 class FavoritesBindings implements Bindings {
   @override
-  void dependencies() {}
+  void dependencies() {
+    Get.put(
+      FavoritesController(
+        authService: Get.find(),
+        moviesService: Get.find(),
+      ),
+    );
+    // Get.lazyPut(() => FavoritesController(loginService: Get.find()), fenix: true);
+  }
 }

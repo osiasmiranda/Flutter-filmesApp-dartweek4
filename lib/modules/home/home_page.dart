@@ -1,6 +1,7 @@
 import 'package:dartweek4_app/app/ui/filmes_app_icons_icons.dart';
 import 'package:dartweek4_app/app/ui/theme_extensions.dart';
 import 'package:dartweek4_app/modules/favorites/Favorites_page.dart';
+import 'package:dartweek4_app/modules/favorites/favorites_bindings.dart';
 import 'package:dartweek4_app/modules/home/home_controller.dart';
 import 'package:dartweek4_app/modules/movies/movies_binding.dart';
 import 'package:dartweek4_app/modules/movies/movies_pages.dart';
@@ -41,6 +42,7 @@ class HomePage extends GetView<HomeController> {
             return GetPageRoute(
               settings: settings,
               page: () => FavoritesPage(),
+              binding: FavoritesBindings(),
             );
           }
           return null;

@@ -1,6 +1,10 @@
+import 'package:dartweek4_app/app/ui/widgets/movies_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class FavoritesPage extends StatelessWidget {
+import 'favorites_controller.dart';
+
+class FavoritesPage extends GetView<FavoritesController> {
   const FavoritesPage({Key? key}) : super(key: key);
 
   @override
@@ -10,9 +14,15 @@ class FavoritesPage extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Text("Favoritos"),
       ),
-      body: Center(
-        child: Container(
-          child: Text('Page Favorites'),
+      body: Obx(
+        () => SingleChildScrollView(
+          child: SizedBox(
+            width: Get.width,
+            child: Wrap(
+              alignment: WrapAlignment.spaceAround,
+              children: controller.movies.map((m) => MoviesCard(movie: m, favoriteCallback: () {})).toList(),
+            ),
+          ),
         ),
       ),
     );
