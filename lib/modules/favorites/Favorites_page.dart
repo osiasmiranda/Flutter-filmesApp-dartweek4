@@ -20,7 +20,7 @@ class FavoritesPage extends GetView<FavoritesController> {
             width: Get.width,
             child: Wrap(
               alignment: WrapAlignment.spaceAround,
-              children: controller.movies.map((m) => MoviesCard(movie: m, favoriteCallback: () {})).toList(),
+              children: controller.movies.map((m) => MoviesCard(movie: m, favoriteCallback: () => controller.removeFavorite(m))).toList(),
             ),
           ),
         ),

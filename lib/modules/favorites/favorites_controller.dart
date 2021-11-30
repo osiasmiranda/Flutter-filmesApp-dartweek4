@@ -8,7 +8,7 @@ class FavoritesController extends GetxController {
   final MoviesService _moviesService;
   final AuthService _authService;
 
-  var movies = <MovieModel>[];
+  var movies = <MovieModel>[].obs;
 
   FavoritesController({
     required MoviesService moviesService,
@@ -34,6 +34,7 @@ class FavoritesController extends GetxController {
     var user = _authService.user;
     if (user != null) {
       await _moviesService.addOrRemoveFavorite(user.uid, movie.copyWith(favorite: false));
+      movies.remove(movie);
     }
   }
 }
