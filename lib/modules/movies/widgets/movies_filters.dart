@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
-import 'package:dartweek4_app/modules/movies/widgets/filter_tag.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import '/modules/movies/movies_controller.dart';
+import '/modules/movies/widgets/filter_tag.dart';
 
 class MoviesFilters extends GetView<MoviesController> {
   const MoviesFilters({Key? key}) : super(key: key);

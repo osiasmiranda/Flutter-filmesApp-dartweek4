@@ -1,9 +1,9 @@
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
-import 'package:dartweek4_app/repositories/genres/genres_repository.dart';
-import 'package:dartweek4_app/repositories/genres/genres_repository_impl.dart';
-import 'package:dartweek4_app/services/genres/genres_service.dart';
-import 'package:dartweek4_app/services/genres/genres_service_impl.dart';
 import 'package:get/get.dart';
+import '/modules/movies/movies_controller.dart';
+import '/repositories/genres/genres_repository.dart';
+import '/repositories/genres/genres_repository_impl.dart';
+import '/services/genres/genres_service.dart';
+import '/services/genres/genres_service_impl.dart';
 
 class MoviesBinding implements Bindings {
   @override

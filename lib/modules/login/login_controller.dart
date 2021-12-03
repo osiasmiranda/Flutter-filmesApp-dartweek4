@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/app/ui/loader/loader_mixin.dart';
-import 'package:dartweek4_app/app/ui/messeges/messages_mixin.dart';
-import 'package:dartweek4_app/services/login/login_service.dart';
 import 'package:get/get.dart';
+import '/app/ui/loader/loader_mixin.dart';
+import '/app/ui/messeges/messages_mixin.dart';
+import '/services/login/login_service.dart';
 
 class LoginController extends GetxController with LoaderMixin, MessagesMixin {
   final LoginService _loginService;

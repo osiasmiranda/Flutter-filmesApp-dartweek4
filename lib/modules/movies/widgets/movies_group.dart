@@ -1,8 +1,8 @@
-import 'package:dartweek4_app/app/ui/widgets/movies_card.dart';
-import 'package:dartweek4_app/models/movie_model.dart';
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '/app/ui/widgets/movies_card.dart';
+import '/models/movie_model.dart';
+import '/modules/movies/movies_controller.dart';
 
 class MoviesGroup extends GetView<MoviesController> {
   final String title;

@@ -1,8 +1,8 @@
-import 'package:dartweek4_app/models/movie_model.dart';
 import 'package:get/get.dart';
 
-import 'package:dartweek4_app/app/auth/auth_service.dart';
-import 'package:dartweek4_app/services/movies/movies_service.dart';
+import '/models/movie_model.dart';
+import '/app/auth/auth_service.dart';
+import '/services/movies/movies_service.dart';
 
 class FavoritesController extends GetxController {
   final MoviesService _moviesService;

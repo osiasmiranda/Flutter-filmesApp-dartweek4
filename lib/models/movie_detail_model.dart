@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:dartweek4_app/models/cast_model.dart';
-import 'package:dartweek4_app/models/genre_model.dart';
+import '/models/cast_model.dart';
+import '/models/genre_model.dart';
 
 class MovieDetailModel {
   final String title;

@@ -1,4 +1,4 @@
-import 'package:dartweek4_app/models/genre_model.dart';
+import '/models/genre_model.dart';
 
 abstract class GenresRepository {
   Future<List<GenreModel>> getGenres();

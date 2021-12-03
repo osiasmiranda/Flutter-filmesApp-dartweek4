@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/modules/login/login_export.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:get/get.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
+import '/modules/login/login_export.dart';
 
 class LoginPage extends GetView<LoginController> {
   //Instanciando o controller pode usar como acima retirando o stateless

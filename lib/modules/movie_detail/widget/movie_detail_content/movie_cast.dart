@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/app/ui/theme_extensions.dart';
 import 'package:flutter/material.dart';
 
-import 'package:dartweek4_app/models/cast_model.dart';
+import '/app/ui/theme_extensions.dart';
+import '/models/cast_model.dart';
 
 class MovieCast extends StatelessWidget {
   final CastModel? cast;

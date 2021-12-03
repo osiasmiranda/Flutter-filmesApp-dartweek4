@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/app/ui/widgets/movies_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '/app/ui/widgets/movies_card.dart';
 import 'favorites_controller.dart';
 
 class FavoritesPage extends GetView<FavoritesController> {

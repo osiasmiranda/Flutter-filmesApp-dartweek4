@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dartweek4_app/app/rest_client/rest_client.dart';
-import 'package:dartweek4_app/models/movie_detail_model.dart';
-import 'package:dartweek4_app/models/movie_model.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
-
 import './movies_repository.dart';
+import '/app/rest_client/rest_client.dart';
+import '/models/movie_detail_model.dart';
+import '/models/movie_model.dart';
 
 class MoviesRepositoryImpl implements MoviesRepository {
   final RestClient _restClient;

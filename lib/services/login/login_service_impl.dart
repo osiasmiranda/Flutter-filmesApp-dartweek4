@@ -1,4 +1,4 @@
-import 'package:dartweek4_app/repositories/login/login_repository.dart';
+import '/repositories/login/login_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import './login_service.dart';

@@ -1,4 +1,4 @@
-import 'package:dartweek4_app/models/movie_detail_model.dart';
+import '/models/movie_detail_model.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:flutter/material.dart';
 

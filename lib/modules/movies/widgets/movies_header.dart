@@ -1,6 +1,6 @@
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '/modules/movies/movies_controller.dart';
 
 class MoviesHeader extends GetView<MoviesController> {
   const MoviesHeader({Key? key}) : super(key: key);

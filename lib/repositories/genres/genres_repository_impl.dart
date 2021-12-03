@@ -1,6 +1,6 @@
-import 'package:dartweek4_app/app/rest_client/rest_client.dart';
-import 'package:dartweek4_app/models/genre_model.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+import '/app/rest_client/rest_client.dart';
+import '/models/genre_model.dart';
 
 import './genres_repository.dart';
 

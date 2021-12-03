@@ -1,6 +1,5 @@
-import 'package:dartweek4_app/models/movie_detail_model.dart';
 import 'package:flutter/material.dart';
-
+import '/models/movie_detail_model.dart';
 import 'movie_detail_content_credits.dart';
 import 'movie_detail_content_main_cast.dart';
 import 'movie_detail_content_production_companies.dart';

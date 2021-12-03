@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/app/ui/theme_extensions.dart';
-import 'package:dartweek4_app/models/movie_detail_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_stars/flutter_rating_stars.dart';
+import '/app/ui/theme_extensions.dart';
+import '/models/movie_detail_model.dart';
 
 class MovieDetailTitle extends StatelessWidget {
   final MovieDetailModel? movie;

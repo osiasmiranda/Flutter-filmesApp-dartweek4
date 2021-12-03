@@ -1,5 +1,5 @@
-import 'package:dartweek4_app/modules/splash/splash_controller.dart';
 import 'package:get/get.dart';
+import '/modules/splash/splash_controller.dart';
 
 class SplashBindings implements Bindings {
   @override

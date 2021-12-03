@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:dartweek4_app/models/movie_detail_model.dart';
+import '/models/movie_detail_model.dart';
 
 class MovieDetailContentCredits extends StatelessWidget {
   final MovieDetailModel? movie;

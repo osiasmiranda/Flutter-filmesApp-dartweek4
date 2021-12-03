@@ -1,7 +1,7 @@
-import 'package:dartweek4_app/app/ui/filmes_app_icons_icons.dart';
-import 'package:dartweek4_app/app/ui/theme_extensions.dart';
-import 'package:dartweek4_app/models/movie_model.dart';
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
+import '/app/ui/filmes_app_icons_icons.dart';
+import '/app/ui/theme_extensions.dart';
+import '/models/movie_model.dart';
+import '/modules/movies/movies_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/route_manager.dart';

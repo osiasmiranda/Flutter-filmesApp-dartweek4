@@ -1,10 +1,10 @@
-import 'package:dartweek4_app/app/auth/auth_service.dart';
-import 'package:dartweek4_app/app/ui/messeges/messages_mixin.dart';
-import 'package:dartweek4_app/models/genre_model.dart';
-import 'package:dartweek4_app/models/movie_model.dart';
-import 'package:dartweek4_app/services/genres/genres_service.dart';
-import 'package:dartweek4_app/services/movies/movies_service.dart';
 import 'package:get/get.dart';
+import '/app/auth/auth_service.dart';
+import '/app/ui/messeges/messages_mixin.dart';
+import '/models/genre_model.dart';
+import '/models/movie_model.dart';
+import '/services/genres/genres_service.dart';
+import '/services/movies/movies_service.dart';
 
 class MoviesController extends GetxController with MessagesMixin {
   final GenresService _genresService;

@@ -1,7 +1,8 @@
-import 'package:dartweek4_app/app/modules/module.dart';
-import 'package:dartweek4_app/modules/movie_detail/movie_detail_bindings.dart';
-import 'package:dartweek4_app/modules/movie_detail/movie_detail_page.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
+
+import '/app/modules/module.dart';
+import '/modules/movie_detail/movie_detail_bindings.dart';
+import '/modules/movie_detail/movie_detail_page.dart';
 
 class MovieDetailModule extends Module {
   @override

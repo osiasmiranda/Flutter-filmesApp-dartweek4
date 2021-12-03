@@ -1,6 +1,6 @@
-import 'package:dartweek4_app/app/ui/theme_extensions.dart';
-import 'package:dartweek4_app/models/genre_model.dart';
 import 'package:flutter/material.dart';
+import '/app/ui/theme_extensions.dart';
+import '/models/genre_model.dart';
 
 class FilterTag extends StatelessWidget {
   final GenreModel model;

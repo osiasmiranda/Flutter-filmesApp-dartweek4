@@ -1,9 +1,9 @@
-import 'package:dartweek4_app/models/movie_detail_model.dart';
 import 'package:get/get.dart';
 
-import 'package:dartweek4_app/app/ui/loader/loader_mixin.dart';
-import 'package:dartweek4_app/app/ui/messeges/messages_mixin.dart';
-import 'package:dartweek4_app/services/movies/movies_service.dart';
+import '/models/movie_detail_model.dart';
+import '/app/ui/loader/loader_mixin.dart';
+import '/app/ui/messeges/messages_mixin.dart';
+import '/services/movies/movies_service.dart';
 
 class MovieDetailController extends GetxController with LoaderMixin, MessagesMixin {
   final MoviesService _moviesService;

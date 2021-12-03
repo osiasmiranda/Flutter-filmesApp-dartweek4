@@ -1,8 +1,8 @@
-import 'package:dartweek4_app/app/ui/theme_extensions.dart';
 import 'package:flutter/material.dart';
-
-import 'package:dartweek4_app/models/movie_detail_model.dart';
 import 'package:get/get.dart';
+
+import '/app/ui/theme_extensions.dart';
+import '/models/movie_detail_model.dart';
 
 import 'movie_cast.dart';
 

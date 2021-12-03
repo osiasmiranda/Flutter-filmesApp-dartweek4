@@ -1,5 +1,5 @@
-import 'package:dartweek4_app/services/login/login_service.dart';
 import 'package:get/get.dart';
+import '/services/login/login_service.dart';
 
 class HomeController extends GetxController {
   static const NAVIGATOR_KEY = 1;

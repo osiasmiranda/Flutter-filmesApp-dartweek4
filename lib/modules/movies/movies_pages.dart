@@ -1,9 +1,9 @@
-import 'package:dartweek4_app/modules/movies/movies_controller.dart';
-import 'package:dartweek4_app/modules/movies/widgets/movies_group.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:dartweek4_app/modules/movies/widgets/movies_filters.dart';
-import 'package:dartweek4_app/modules/movies/widgets/movies_header.dart';
+import '/modules/movies/movies_controller.dart';
+import '/modules/movies/widgets/movies_group.dart';
+import '/modules/movies/widgets/movies_filters.dart';
+import '/modules/movies/widgets/movies_header.dart';
 
 class MoviesPages extends GetView<MoviesController> {
   const MoviesPages({Key? key}) : super(key: key);
