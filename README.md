@@ -52,7 +52,7 @@ Projeto desenvolvido no treinamento **DART WEEK 4ª EDIÇÃO - Academia Do Flutt
 
 O layout da aplicação está disponível no Figma:
 
-<a href="https://www.figma.com/file/NowpvYt64uNyNavKQFniRx/filmes_app?node-id=0%3A1">
+<a href="https://www.figma.com/file/NowpvYt64uNyNavKQFniRx/filmes_app?node-id=0%3A1" target="_blank">
 <img alt="filmesapp figma" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
