@@ -42,6 +42,7 @@ Projeto desenvolvido no treinamento **DART WEEK 4ª EDIÇÃO - Academia Do Flutt
   - Gerênciamento de rotas
   - Injeção de Dependência
   - Consumindo Api com GetConnect
+  - GetDialog
 - [x] Firebase
 - [x] Git
 - [x] Github
