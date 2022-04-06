@@ -87,7 +87,7 @@ samples, guidance on mobile development, and a full API reference.
  <br />
  <sub><b>Osias Miranda</b></sub></a> <a href="https://github.com/osiasmiranda" title="githubosias">🚀</a>
 
-Feito com ❤️ por Osias Miranda 👋🏽 Entre em contato!
+Feito  por Osias Miranda 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-osiasmiranda-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/osiasmiranda/)](https://www.linkedin.com/in/osias-miranda-57b67a4b/)
 [![Gmail Badge](https://img.shields.io/badge/-osiasmiranda@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:osiasmiranda@gmail.com)](mailto:osiasmiranda@gmail.com)
